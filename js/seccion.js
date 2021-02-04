@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$('.seccionToggle').slideToggle();
 
 		if (estado == true) {
-			$(this).text("Abrir");
+			$(this).text("Promociones");
 			$('body').css({
 				"overflow": "auto"
 			});
