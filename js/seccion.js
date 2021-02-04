@@ -1,21 +1,19 @@
 $(document).ready(function(){
+	Ocultar_Secciones();
 	var estado = false;
 
-	$('#btn-toggle').on('click',function(){
+	$('#btn-toggle-Ad').on('click',function(){
 		$('.seccionToggle').slideToggle();
-
 		if (estado == true) {
-			$(this).text("Promociones");
-			$('body').css({
-				"overflow": "auto"
-			});
+			
 			estado = false;
 		} else {
-			$(this).text("Cerrar");
-			$('body').css({
-				"overflow": "hidden"
-			});
+			$("#secc_adicionales").show();
 			estado = true;
 		}
 	});
 });
+
+function Ocultar_Secciones(){
+	$("#secc_adicionales").hide();
+}
