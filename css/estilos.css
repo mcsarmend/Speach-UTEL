@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://image.freepik.com/foto-gratis/papel-pintado-pared-hormigon-pintado-textura-concepto-coloreado_53876-31799.jpg');
 	*{
 		margin: 0;
 		padding: 0;
@@ -6,9 +6,9 @@
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
 	body{
-		background: #84C447;
+		background-image: url('https://image.freepik.com/foto-gratis/papel-pintado-pared-hormigon-pintado-textura-concepto-coloreado_53876-31799.jpg');
 		background-size: 100vw 100vh;
-		background-repeat: no-repeat;
+
 	}
 	.capa{
 		position: fixed;
@@ -119,14 +119,92 @@
 		cursor: pointer;
 		font-size: 18px;
 	}
-  /*Fin de Menù lateral*/
-  
+  /*Licenciaturas inicio*/
+.container-lic{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+.container-lic .btn-menu, .logo{
+	float: left;
+	line-height:100px;
+}
+.container-lic .btn-menu label{
+	color: #fff;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.container-lic .menu{
+	float: left;
+	line-height: 100px;
+}
+.container-lic .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 50px;
+	margin-right: 5px;
+}
+.container-lic .menu a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+
+/* Licenciaturas Fin */ 
+
+/* Index (Home) inicio  */
+.container-home{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	justify-content: center;
+	display: flex;
+}
+
+.container-home .btn-menu label{
+	color: #fff;
+	font-size: 500px;
+	cursor: pointer;
+}
+.container-home .menu{
+	float: center;
+	line-height: 200px;
+}
+.container-home .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 80px;
+	margin-right: 5px;
+}
+.container-home .menu a:hover{
+	border-bottom: 2px solid #c7c7c7;
+	padding-bottom: 5px;
+}
+
+/* Index (Home) Fin  */
+
 
   .wrap {
   width: 90%;
   max-width: 1000px;
   margin: auto; 
   color:floralwhite;}
+  .wrap p{
+	text-align: justify; 	  
+  }
+  .wrap li{
+	text-align: justify; 	  
+  }
 
 .main {
   width: 100%;
@@ -136,9 +214,9 @@
 .seccionToggle {
   display: none;
   height: calc(100vh - 50px);
-  background: #84C447;
+  background: #00223F;
   color: #001F3F;
   padding: 50px 0;
-  text-align: center; 
+  text-align: justify; 
   margin-block: 100px;
 }
