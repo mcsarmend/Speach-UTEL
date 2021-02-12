@@ -5,11 +5,7 @@
 		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
-	body{
-		background-image: url('https://image.freepik.com/foto-gratis/papel-pintado-pared-hormigon-pintado-textura-concepto-coloreado_53876-31799.jpg');
-		background-size: 100vw 100vh;
 
-	}
 	.capa{
 		position: fixed;
 		width: 100%;
@@ -35,16 +31,11 @@
 		line-height:100px;
 	}
 	.container .btn-menu label{
-		color: #fff;
+		color:black;
 		font-size: 25px;
 		cursor: pointer;
 	}
-	.logo h1{
-		color: #fff;
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	}
+
 	.container .menu{
 		float: right;
 		line-height: 100px;
@@ -54,7 +45,7 @@
 		padding: 15px;
 		line-height: normal;
 		text-decoration: none;
-		color: #fff;
+		color: black;
 		transition: all 0.3s ease;
 		border-bottom: 2px solid transparent;
 		font-size: 15px;
@@ -115,7 +106,7 @@
 		position: absolute;
 		right: 5px;
 		top: 10px;
-		color: #fff;
+		color:black;
 		cursor: pointer;
 		font-size: 18px;
 	}
@@ -130,7 +121,7 @@
 	line-height:100px;
 }
 .container-lic .btn-menu label{
-	color: #fff;
+	color: black;
 	font-size: 50px;
 	cursor: pointer;
 }
@@ -144,7 +135,7 @@
 	padding: 15px;
 	line-height: normal;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 	transition: all 0.3s ease;
 	border-bottom: 2px solid transparent;
 	font-size: 50px;
@@ -167,7 +158,7 @@
 }
 
 .container-home .btn-menu label{
-	color: #fff;
+	color: black;
 	font-size: 500px;
 	cursor: pointer;
 }
@@ -180,7 +171,7 @@
 	padding: 15px;
 	line-height: normal;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 	transition: all 0.3s ease;
 	border-bottom: 2px solid transparent;
 	font-size: 80px;
@@ -198,7 +189,7 @@
   width: 90%;
   max-width: 1000px;
   margin: auto; 
-  color:floralwhite;}
+  color:black;}
   .wrap p{
 	text-align: justify; 	  
   }
@@ -214,9 +205,98 @@
 .seccionToggle {
   display: none;
   height: calc(100vh - 50px);
-  background: #00223F;
-  color: #001F3F;
   padding: 50px 0;
   text-align: justify; 
   margin-block: 100px;
 }
+
+h1{
+	font-size: 30px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  table{
+	width:100%;
+	table-layout: fixed;
+  }
+  .tbl-header{
+	background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+	height:300px;
+	overflow-x:auto;
+	margin-top: 0px;
+	border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+	padding: 20px 15px;
+	text-align: Center;
+	font-weight: 500;
+	font-size: 15px;
+	color: black;
+	text-transform: uppercase;
+  }
+  td{
+	padding: 20px 15px;
+	text-align: Center;
+	font-weight: 500;
+	font-size: 15px;
+	color: black;
+	text-transform: uppercase;
+	border-bottom: solid 10px rgba(255,255,255,0.1);
+  }
+  
+  
+  /* demo styles */
+  
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  body{
+	background: -webkit-linear-gradient(left, #25b7c4, #25c481);
+	background: linear-gradient(to right, #25b7c4, #25c481);
+	font-family: 'Roboto', sans-serif;
+  }
+  section{
+	margin: 50px;
+  }
+  
+  
+  /* follow me template */
+  .made-with-love {
+	margin-top: 40px;
+	padding: 10px;
+	clear: left;
+	text-align: center;
+	font-size: 10px;
+	font-family: arial;
+	color: #fff;
+  }
+  .made-with-love i {
+	font-style: normal;
+	color: #F50057;
+	font-size: 14px;
+	position: relative;
+	top: 2px;
+  }
+  .made-with-love a {
+	color: #fff;
+	text-decoration: none;
+  }
+  .made-with-love a:hover {
+	text-decoration: underline;
+  }
+  
+  
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+	  width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }
