@@ -2,7 +2,7 @@ $(document).ready(function(){
 	Ocultar_Secciones();
 	var estado = false;
 	var estado_lic = false;
-
+// Botones de las secciones Aprender
 	$('#btn-toggle-Ad').on('click',function(){
 		$('.seccionToggle').slideToggle();
 		if (estado == true) {
@@ -300,18 +300,121 @@ $(document).ready(function(){
 		mostrar_lics();
 	});
 
+// Botones de Acordar
+// Abrir promociones
+//Escalonada Bimestral
+$('#btn-toggle-escBim').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromosExcUna("escBim");
+
+});
+$('#return_escBim_acordar').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromos();
+});
+//Por Jornada
+
+$('#btn-toggle-Jor').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromosExcUna("jor");
+	
+});
+$('#return_jor_acordar').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromos();
+});
+//Escalonada Mensual
+
+$('#btn-toggle-escMen').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromosExcUna("escMen");
+	
+});
+$('#return_escMen_acordar').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromos();
+});
+//Jornada Mensual
+
+$('#btn-toggle-jorMen').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromosExcUna("jorMen");
+	
+});
+$('#return_jorMen_acordar').on('click',function(){
+	$('.seccionToggle').slideToggle();
+	ocultarPromos();
+});
 
 
 
 
 
 });
+function ocultarBotonesProm(){
+	$('#btn-toggle-escBim').hide();
+	$('#btn-toggle-escMen').hide();
+	$('#btn-toggle-Jor').hide();
+	$('#btn-toggle-jorMen').hide();
+}
+
+function ocultarPromosExcUna(exception){
+
+	$('#_return_Acordar').hide();
+	$('#_main').hide();
+	switch(exception){
+	case "escBim":
+		ocultarBotonesProm();
+		$('#secc_escBim').show();
+		$('#secc_escMen').hide();
+		$('#secc_jor').hide();
+		$('#secc_jorMen').hide();				
+
+	break;
+	case "jor":
+		ocultarBotonesProm();
+		$('#secc_jor').show();
+		$('#secc_escMen').hide();
+		$('#secc_escBim').hide();
+		$('#secc_jorMen').hide();								
+	break;
+	case "escMen":
+		ocultarBotonesProm();
+		$('#secc_escMen').show();
+		$('#secc_jor').hide();
+		$('#secc_escBim').hide();
+		$('#secc_jorMen').hide();				
+	break;
+	case "jorMen":
+		ocultarBotonesProm();
+		$('#secc_jorMen').show();
+		$('#secc_escMen').hide();
+		$('#secc_jor').hide();
+		$('#secc_escBim').hide();				
+	break;
+	}
+}
+function ocultarPromos(){
+	$('#_return_Acordar').show();
+	$('#_main').show();
+	$('#btn-toggle-Jor').show();	
+	$('#btn-toggle-escBim').show();
+	$('#btn-toggle-escMen').show();
+	$('#btn-toggle-jorMen').show();
+	$('#secc_escBim').hide();
+	$('#secc_jor').hide();
+	$('#secc_escMen').hide();
+	$('#secc_jorMen').hide();
+
+
+}
 
 function Ocultar_Secciones(){
 	$("#licenciaturas").hide();
 	$("#secc_adicionales").hide();
 	$("#secc_diferenciadores").hide();
 	$("#secc_generalidades").hide();
+	$('#secc_prom').hide();
 }
 function Ocultar_Secciones_Exc_Una(exception){
 	switch(exception){
@@ -382,7 +485,6 @@ function mostrar_lics(){
 
 
 }
-
 function Ocultar_Lic_Exc_Una(exception){
 	$("#lics").hide();
 	$("#return_").hide();
