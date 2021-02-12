@@ -9,24 +9,21 @@
 <body>
 
     <!-- -->
-	<header class="header">
+	<header class="header" id="_header">
 		<div class="container" id ="Aprender">
 			<nav class="menu">
-				<a href="#" id="btn-toggle-Ad">Precios</a>
-                <a href="#" id="btn-toggle-Dif">Promociones</a>
-                <a href="index.html" >Regresar</a>
+				<!--  <a href="#" id="btn-toggle-price">Precios</a> -->
+                <a href="#" id="btn-toggle-escBim">Escalonada Bimestral</a>
+                <a href="#" id="btn-toggle-Jor">Jornadas</a>
+                <a href="#" id="btn-toggle-escMen">Escalonada Mensual</a>
+                <a href="#" id="btn-toggle-jorMen">Jornadas Mensuales</a>
+                <a href="index.html" id = "_return_Acordar" >Regresar</a>
             </nav>
         </div>
     </header>
-    <head>
-        <div class="container" id="Acordar">
-
-        </div>
-    </head>
-
 
 <!--  Sección Central  -->
-    <main>
+    <main id = "_main">
         <div class="main">
             <div class="wrap">
                 <h1>Acordar</h1>
@@ -73,6 +70,224 @@
     
     </main>
   
+
+<!-- Secciones-->
+<!-- Promociones-->
+
+<!--Escalonada Bimestral-->
+<div id="secc_escBim" class="container-lic">
+        <section class="seccionToggle" >
+            <div class="wrap">
+                <nav class="menu">
+                    <a href="#"  id = "return_escBim_acordar">Escalonada Bimestral<a>
+                </nav>
+                <br><br><br><br><br><br>
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                      <tr>
+                        <th>Bimestre</th>
+                        <th>Pago X Mes</th>
+                        <th>Sin Utel X</th>
+                        <th>Utel X</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <div class="tbl-content">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td rowspan="2">1 ER BIMESTRE</td>
+                        <td>1ER MES</td>
+                        <td>$1,049.00</td>
+                        <td>$1,224.00</td>
+                    </tr>
+                    <tr>
+                        <td>2DO MES</td>
+                        <td>$1,049.00</td>
+                        <td>$1,224.00</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2DO BIMESTRE</td>
+                        <td>1ER MES</td>
+                        <td>$1,575.00</td>
+                        <td>$1,750.00</td>
+                    </tr>
+                    <tr>
+                        <td>2DO MES</td>
+                        <td>$1,575.00</td>
+                        <td>$1,750.00</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3ER BIMESTRE</td>
+                        <td>1ER MES</td>
+                        <td>$1,943.00</td>
+                        <td>$2,118.00</td>
+                    </tr>
+                    <tr>
+                        <td>2DO MES</td>
+                        <td>$1,943.00</td>
+                        <td>$2,118.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">A PARTIR 4TO BIM</td>
+                        <td>$2,625.00</td>
+                        <td>$2,800.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">(Depende mensualidad) Colegiatura 7</td>
+                        <td>$2,325.00</td>
+                        <td>$2,570.00</td>
+                    </tr>
+
+                  </table>
+            </div>
+        </section>
+</div>
+
+<!--Por Jornadas-->
+<div id="secc_jor" class="container-lic">
+    <section class="seccionToggle" >
+        <div class="wrap">
+            <nav class="menu">
+                <a href="#"  id = "return_jor_acordar">Jornada<a>
+            </nav>
+            <br><br><br><br><br><br>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>Jornada</th>
+                    <th>Mensualidad</th>
+                    <th>Beneficios sin UTEL X</th>
+                    <th>Mensualidad</th>
+                    <th>Beneficios con UTEL X</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>Intensiva</td>
+                    <td>$2,625.00*</td>
+                    <td>Asistencia + TÍTULO</td>
+                    <td>$2,800.00*</td>
+                    <td>ASISTENCIA + TITULO + UTELX</td>
+                </tr>
+                <tr>
+                    <td>Intensiva</td>
+                    <td>$2,395.00*</td>
+                    <td>SIN BENEFICIOS</td>
+                    <td>$2,570.00*</td>
+                    <td>UTEL X</td>
+                </tr>
+                <tr>
+                    <td>Completa</td>
+                    <td>$2,395.00*</td>
+                    <td>TÍTULO</td>
+                    <td>$2,570.00</td>
+                    <td>ASISTENCIA + TITULO + UTELX</td>
+                </tr>
+              </table>
+            </div>
+    </section>
+</div>
+<!--Escalonada Mensual-->
+<div id="secc_escMen" class="container-lic">
+    <section class="seccionToggle" >
+        <div class="wrap">
+            <nav class="menu">
+                <a href="#"  id = "return_escMen_acordar">Escalonada Mensual<a>
+            </nav>
+            <br><br><br><br><br><br>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>PAGO X MES</th>
+                    <th>SIN UTEL X</th>
+                    <th>UTEL X</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>1 MES</td>
+                    <td>$1,049.00</td>
+                    <td>$1,224.00</td>
+                </tr>
+                <tr>
+                    <td>2DO MES</td>
+                    <td>$1,575.00</td>
+                    <td>$1,750.00</td>
+                </tr>
+                <tr>
+                    <td>3ER MES</td>
+                    <td>$1,943.00</td>
+                    <td>$2,118.00</td>
+                </tr>
+                <tr>
+                    <td>MENSUAL</td>
+                    <td>$2,625.00</td>
+                    <td>$2,800.00</td>
+                </tr>
+                <tr>
+                    <td>MENSUAL</td>
+                    <td>$2,395.00</td>
+                    <td>$2,570.00</td>
+                </tr>
+              </table>
+            </div>
+    </section>
+</div>
+<!--Jornadas Mensuales-->
+<div id="secc_jorMen" class="container-lic">
+    <section class="seccionToggle" >
+        <div class="wrap">
+            <nav class="menu">
+                <a href="#"  id = "return_jorMen_acordar">Jornada Mensual<a>
+            </nav>
+            <br><br><br><br><br><br>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>Jornada</th>
+                    <th>mensualidad</th>
+                    <th>Beneficios sin UTEL X</th>
+                    <th>Mensualidad</th>
+                    <th>Beneficios con UTEL X</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>INTENSIVA</td>
+                    <td>$2,625.00*</td>
+                    <td>TÍTULO +ASISTENCIA + TITULO INTERMEDIO + VOXY</td>
+                    <td>$2,800.00*</td>
+                    <td>TÍTULO +ASISTENCIA + TITULO INTERMEDIO + VOXY + UTEL X</td>
+                </tr>
+                <tr>
+                    <td>INTENSIVA</td>
+                    <td>$2,395.00*</td>
+                    <td>ASISTENCIA + TITULO INTERMEDIO + VOXY</td>
+                    <td>$2,575.00*</td>
+                    <td>ASISTENCIA + TITULO INTERMEDIO + VOXY + UTEL X</td>
+                </tr>
+                <tr>
+                    <td>INTENSIVA</td>
+                    <td>$2,395.00*</td>
+                    <td>TÍTULO + ASISTENCIA + TITULO INTERMEDIO + VOXY</td>
+                    <td>$2,570.00*</td>
+                    <td>TÍTULO + ASISTENCIA + TITULO INTERMEDIO + VOXY + UTEL X</td>
+                </tr>
+              </table>
+            </div>
+    </section>
+</div>
+
 
 </body> 
 <script src="js/seccion.js"></script>
