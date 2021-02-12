@@ -153,8 +153,8 @@
 	max-width: 1200px;
 	margin: auto;
 	justify-content: center;
-	display: table-cell;
-    	vertical-align: middle
+	position:absolute;
+    	
 }
 
 .container-home .btn-menu label{
